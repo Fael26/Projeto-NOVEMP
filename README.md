@@ -15,7 +15,7 @@ Nosso objetivo com este trabalho foi desenvolver um banco de dados em SQL para a
 
 ## Histórico de versões
 
-*0.0.7
+* 0.0.7
     * Conclusão
 * 0.0.6
     * Tivemos reuniões isoladas para aprimoramento de nossa base.
