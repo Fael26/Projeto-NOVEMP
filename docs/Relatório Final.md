@@ -13,7 +13,7 @@
 
 Professores:
 
-** Prof. Marco Paulo Soares Gomes **
+**Prof. Marco Paulo Soares Gomes**
 
 ---
 
