@@ -1,7 +1,7 @@
 # Projeto Banco de Dados Novemp
 
 
-**Rafael Cabral** 
+**Rafael Cabral Campos** 
 
 **Filipe Simtob**
 
