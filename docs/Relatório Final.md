@@ -1,13 +1,13 @@
 # Projeto Banco de Dados Novemp
 
 
-**Rafael Cabral 
+**Rafael Cabral** 
 
-**Filipe Simtob
+**Filipe Simtob**
 
-**Laura Neves
+**Laura Neves**
 
-**Anderson Babetto
+**Anderson Babetto**
 
 ---
 
