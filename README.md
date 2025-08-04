@@ -1,17 +1,17 @@
-# Nome do projeto
+# Projeto Banco de Dados da Novemp
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando que o objeto é desenvolver um sistema inteligente. Você deve mencionar o produto que está sendo desenvolvido, e não o que se espera obter com este produto.
+Nosso objetivo com este trabalho foi desenvolver um banco de dados em SQL para a empresa de elétrica Novemp. Utilizamos dados fictícios da empresa para que a base de dados funcionasse corretamente.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Rafael Cabral 
+* Anderson Babetto
+* FiLipe Simtob
+* Laura Neves
 
 ## Professor
 
-* Nome completo do professor (Prof. Hugo Bastos de Paula)
+* Marco Paulo Soares Gomes
 
 ## Instruções de utilização
 
