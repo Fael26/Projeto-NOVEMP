@@ -113,108 +113,28 @@ Desenvolver um banco de dados relacional para atender às necessidades do setor 
 
 ## Indução de modelos
 
-### Modelo 1: Algoritmo
+### Projeto Conceitual
 
-Substitua o título pelo nome do algoritmo que será utilizado. P. ex. árvore de decisão, rede neural, SVM, etc.
-Justifique a escolha do modelo.
-Apresente o processo utilizado para amostragem de dados (particionamento, cross-validation).
-Descreva os parâmetros utilizados. 
-Apresente trechos do código utilizado comentados. Se utilizou alguma ferramenta gráfica, apresente imagens
-com o fluxo de processamento.
-
-### Modelo 2: Algoritmo
-
-Repita os passos anteriores para o segundo modelo.
+Essa seção apresenta o projeto conceitual da Novemp (v1.0), descrevendo as principais estruturas e restrições conceituais do banco de dados. Particularmente, a Figura 1 apresenta o diagrama entidade-relacionamento (MER) do modelo conceitual da Novemp.
+Além disso, a Tabela 1 fornece uma descrição mais detalhada dos elementos representados no diagrama da Figura 1. Nela, é possível observar que a descrição textual do minimundo identificou seis entidades e seus atributos. Também foram reconhecidos dois relacionamentos entre as entidades, juntamente com suas respectivas restrições de cardinalidade.
 
 
-## Resultados
 
-### Resultados obtidos com o modelo 1.
+### Projeto Lógico
 
-Apresente aqui os resultados obtidos com a indução do modelo 1. 
-Apresente uma matriz de confusão quando pertinente. Apresente as medidas de performance
-apropriadas para o seu problema. 
-Por exemplo, no caso de classificação: precisão, revocação, F-measure, acurácia.
+Nesta seção, exploramos o projeto lógico do banco de dados Novemp, destacando suas principais estruturas e restrições conforme o modelo relacional. A Figura 2 ilustra o diagrama relacional, construído a partir do modelo conceitual apresentado na Seção 3, traduzindo os elementos conceituais em uma representação lógica clara e estruturada.
+A Figura 2 apresenta o diagrama relacional do banco de dados Novemp, no qual foram mapeadas dez entidades principais: Produtos, TiposProdutos, Clientes, Pedidos, Itens, Parcelas, Representantes, Telefones, EnderecoPagamento e EnderecoEntrega. O modelo contempla, em média, cinco atributos por entidade, refletindo um bom nível de detalhamento para representar as operações do sistema. Além disso, é possível observar diversas restrições de integridade referencial, totalizando onze relacionamentos entre tabelas, que garantem a consistência dos dados. A utilização de chaves primárias (PK) e estrangeiras (FK) está bem definida, o que favorece tanto a integridade quanto a normalização do modelo.
+Esse diagrama é especialmente útil para visualizar de forma clara e estruturada as relações entre os dados, independentemente do Sistema Gerenciador de Banco de Dados (SGBD) relacional que venha a ser utilizado na implementação. 
+Além do modelo de dados, uma etapa essencial no projeto lógico é definir qual abordagem e qual solução de banco de dados será utilizada. No caso da Novemp, optamos por seguir a abordagem relacional, adotando o MySQL como sistema gerenciador. Essa escolha se dá pela robustez, ampla aceitação no mercado e compatibilidade com as necessidades da aplicação.
 
-### Interpretação do modelo 1
-
-Apresente os parâmetros do modelo obtido. Tentre mostrar as regras que são utilizadas no
-processo de 'raciocínio' (*reasoning*) do sistema inteligente. Utilize medidas como 
-o *feature importances* para tentar entender quais atributos o modelo se baseia no
-processo de tomada de decisão.
-
-
-### Resultados obtidos com o modelo 2.
-
-Repita o passo anterior com os resultados do modelo 2.
-
-### Interpretação do modelo 2
-
-Repita o passo anterior com os parâmetros do modelo 2.
-
-
-## Análise comparativa dos modelos
-
-Discuta sobre as forças e fragilidades de cada modelo. Exemplifique casos em que um
-modelo se sairia melhor que o outro. Nesta seção é possível utilizar a sua imaginação
-e extrapolar um pouco o que os dados sugerem.
-
-
-### Distribuição do modelo (opcional)
-
-Tende criar um pacote de distribuição para o modelo construído, para ser aplicado 
-em um sistema inteligente.
-
+---
 
 ## 8. Conclusão
 
-Apresente aqui a conclusão do seu trabalho. Discussão dos resultados obtidos no trabalho, 
-onde se verifica as observações pessoais de cada aluno.
-
-Uma conclusão deve ter 3 partes:
-
-   * Breve resumo do que foi desenvolvido
-	 * Apresenação geral dos resultados obtidos com discussão das vantagens e desvantagens do sistema inteligente
-	 * Limitações e possibilidades de melhoria
-
-
-# REFERÊNCIAS
-
-Como um projeto de sistema inteligente não requer revisão bibliográfica, 
-a inclusão das referências não é obrigatória. No entanto, caso você 
-tenha utilizado referências na introdução ou deseje 
-incluir referências relacionadas às tecnologias, padrões, ou metodologias 
-que serão usadas no seu trabalho, relacione-as de acordo com a ABNT.
-
-Verifique no link abaixo como devem ser as referências no padrão ABNT:
-
-http://www.pucminas.br/imagedb/documento/DOC\_DSC\_NOME\_ARQUI20160217102425.pdf
-
-Por exemplo:
-
-**[1]** - _ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019. E-book. ISBN 9788543025001._
-
-**[2]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
-
-**[3]** - _CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. Rio de Janeiro, RJ: Elsevier, Campus, c2012. xvi, 926 p. ISBN 9788535236996._
-
-**[4]** - _SUTHERLAND, Jeffrey Victor. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. 2. ed. rev. São Paulo, SP: Leya, 2016. 236, [4] p. ISBN 9788544104514._
-
-**[5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
+A construção do banco de dados da empresa fictícia Novemp representou uma experiência completa de modelagem, implementação e análise de dados aplicados ao contexto empresarial. A partir de informações simuladas, conseguimos representar com fidelidade os processos do setor de vendas, contemplando desde o cadastro de clientes até a emissão de pedidos e controle de pagamentos. O projeto reforçou a importância de um modelo bem estruturado, com integridade referencial e normalização adequada, garantindo confiabilidade e consistência nas operações. A escolha pelo MySQL como SGBD se mostrou acertada, atendendo às necessidades técnicas com eficiência. Além disso, a elaboração de consultas SQL complexas permitiu extrair insights relevantes, como padrões de compra, desempenho de representantes e preferências por produto e região. As análises oferecidas podem servir de base para decisões mais estratégicas e direcionadas. O contato com a empresa também foi essencial para validar o sistema frente às demandas reais do mercado. Por fim, este trabalho evidencia o potencial dos bancos de dados como ferramentas não só operacionais, mas também analíticas e decisórias.
 
 
 
-# APÊNDICES
-
-**Colocar link:**
-
-Do código (armazenado no repositório);
-
-Dos artefatos (armazenado do repositório);
-
-Da apresentação final (armazenado no repositório);
-
-Do vídeo de apresentação (armazenado no repositório).
 
 
 
