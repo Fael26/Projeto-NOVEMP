@@ -50,34 +50,66 @@ Desenvolver um banco de dados relacional para atender às necessidades do setor 
 
 ---
 
-## Análise exploratórida dos dados
+### Tabela 1: Elementos do modelo conceitual do banco de dados Novemp (v1.0)
 
-###    Dicionário de dados
+| Tipo            | Subtipo      | ID    | Rótulo                   | Referência                       |
+|-----------------|--------------|-------|---------------------------|----------------------------------|
+| Entidade        | Forte        | E001  | Cliente                  |                                  |
+| Entidade        | Forte        | E002  | Representante            |                                  |
+| Entidade        | Forte        | E003  | Parcela                  |                                  |
+| Entidade        | Forte        | E004  | Produto                  |                                  |
+| Entidade        | Forte        | E005  | Pedido                   |                                  |
+| Entidade        | Associativa  | E006  | Itens                    |                                  |
+| Entidade        | Fraca        | E007  | Telefone                 | E001                             |
+| Entidade        | Fraca        | E008  | EnderecoPag              | E001                             |
+| Entidade        | Fraca        | E009  | EnderecoEnt              | E001                             |
+| Relacionamento  | Simples      | R001  | Possui                   | E004, E006                       |
+| Relacionamento  | Simples      | R002  | Faz                      | E001, E005                       |
+| Relacionamento  | Simples      | R003  | Realiza                  | E002, E005                       |
+| Relacionamento  | Simples      | R004  | Possui                   | E005, E003                       |
+| Relacionamento  | Simples      | R005  | Possui                   | E001, E007                       |
+| Relacionamento  | Simples      | R006  | Possui                   | E001, E008                       |
+| Relacionamento  | Simples      | R007  | Possui                   | E001, E009                       |
+| Atributo        | Identificador| A001  | ID_Cliente               | E001                             |
+| Atributo        | Simples      | A002  | Nome                     | E001                             |
+| Atributo        | Simples      | A003  | CNPJ                     | E001                             |
+| Atributo        | Simples      | A004  | Inscrição Estadual       | E001                             |
+| Atributo        | Simples      | A005  | Razão Social             | E001                             |
+| Atributo        | Simples      | A006  | Email                    | E001                             |
+| Atributo        | Simples      | A007  | ID_EnderecoPag           | E008                             |
+| Atributo        | Simples      | A008  | Logradouro               | E008, E009                       |
+| Atributo        | Simples      | A009  | Número                   | E008, E009                       |
+| Atributo        | Simples      | A010  | Complemento              | E008, E009                       |
+| Atributo        | Simples      | A011  | Bairro                   | E008, E009                       |
+| Atributo        | Simples      | A012  | Cidade                   | E008, E009                       |
+| Atributo        | Simples      | A013  | Estado                   | E008, E009                       |
+| Atributo        | Simples      | A014  | ID_EnderecoEnt           | E009                             |
+| Atributo        | Simples      | A015  | ID_Telefone              | E007                             |
+| Atributo        | Simples      | A016  | DDD                      | E007                             |
+| Atributo        | Simples      | A017  | Número                   | E007                             |
+| Atributo        | Simples      | A018  | Tipo                     | E007                             |
+| Atributo        | Identificador| A019  | ID_Representante         | E002                             |
+| Atributo        | Simples      | A020  | Nome                     | E002                             |
+| Atributo        | Identificador| A021  | ID_Produto               | E004                             |
+| Atributo        | Simples      | A022  | Nome                     | E004                             |
+| Atributo        | Simples      | A023  | Valor                    | E004                             |
+| Atributo        | Identificador| A024  | ID_Pedido                | E005                             |
+| Atributo        | Simples      | A025  | Comissão                 | E005                             |
+| Atributo        | Simples      | A026  | PrazoEntrega             | E005                             |
+| Atributo        | Simples      | A027  | Frete                    | E005                             |
+| Atributo        | Simples      | A028  | Data                     | E005                             |
+| Atributo        | Simples      | A029  | Valor                    | E005                             |
+| Atributo        | Simples      | A030  | QuantidadeParcelas       | E005                             |
+| Atributo        | Identificador| A031  | ID_Parcela               | E003                             |
+| Atributo        | Simples      | A032  | FormaPagamento           | E003                             |
+| Atributo        | Simples      | A033  | Valor                    | E003                             |
+| Atributo        | Simples      | A034  | DataPagamento            | E003                             |
+| Atributo        | Simples      | A035  | DataVencimento           | E003                             |
+| Atributo        | Identificador| A036  | ID_Itens                 | E006                             |
+| Atributo        | Simples      | A037  | QuantidadeProdutos       | E006                             |
+| Atributo        | Simples      | A038  | Quantidade               | R001    
 
-Apresente uma descrição das bases de dados a serem utilizadas. 
-Dicionários de dados devem conter as bases de dados, os nomes dos atributos 
-com seu significado, seu tipo (inteiro, real, textual, categórico, etc).
-
-Este projeto deve utilizar pelo menos duas fontes de dados. Uma fonte principal e 
-uma fonte para enriquecimentos dos dados principais.
-
-
-###    Descrição de dados
-
-Utilize a análise descritiva baseada em estatística de primeira ordem para descrever os dados.
-Como descrever dados numéricos: média, desvio padrão, mínimo, máximo, quartis, histograma, etc.
-Como descrever dados qualitativos (categóricos): moda (valor mais frequente), quantidade de valores distintos (categorias), distribuição das categorias (histograma), etc.
-
-
-## Preparação dos dados
-
-A preparação dos dados consiste dos seguintes passos:
-
-> - Seleção dos atributos
-> - Tratamentos dos valores faltantes ou omissos: remoção, substituição, indução, etc.
-> - Tratamento dos valores inconsistentes: conversão, remoção de dados duplicados, remoção ou tratamento de ouliers.
-> - Conversão de dados: p. ex. numérico para categórico, categórico para binário, etc.
-
+---
 
 ## Indução de modelos
 
