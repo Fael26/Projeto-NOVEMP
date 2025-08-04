@@ -6,23 +6,27 @@ Nosso objetivo com este trabalho foi desenvolver um banco de dados em SQL para a
 
 * Rafael Cabral 
 * Anderson Babetto
-* FiLipe Simtob
+* Filipe Simtob
 * Laura Neves
 
 ## Professor
 
 * Marco Paulo Soares Gomes
 
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
-
 ## Histórico de versões
 
-* 0.1.1
-    * CHANGE: Atualização das documentacoes. Código permaneceu inalterado.
-* 0.1.0
-    * Indução do primeiro modelo do agente inteligente.
+*0.0.7
+    * Conclusão
+* 0.0.6
+    * Tivemos reuniões isoladas para aprimoramento de nossa base.
+* 0.0.5
+    * Análise de Dados - Consultas SQL.
+* 0.0.4
+    * Projeto Lógico da área de vendas da empresa parceira.
+* 0.0.3
+    * Projeto Conceitual da área de vendas da empresa parceira.
+* 0.0.2
+    * Especificação do Mini Mundo.
 * 0.0.1
-    * Trabalhando na preparação dos dados.
+    * Comunicação com a empresa parceira.
 
