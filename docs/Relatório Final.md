@@ -33,6 +33,8 @@ O projeto consistiu na criação de um banco de dados relacional para a empresa 
 
 Neste projeto, desenvolvemos um banco de dados relacional para a empresa fictícia de elétrica Novemp, com foco no setor de vendas. A iniciativa teve como objetivo organizar e estruturar os dados comerciais da empresa, permitindo uma gestão mais eficiente e analítica. A partir de dados simulados, construímos modelos conceitual, lógico e físico, respeitando princípios de integridade e normalização. Também implementamos consultas SQL para gerar insights sobre clientes, produtos e representantes. O resultado é uma solução robusta, capaz de apoiar decisões estratégicas com base em dados reais.
 
+---
+
 ###    Contextualização
 
 Atualmente, a gestão de dados é um dos principais pilares para a eficiência e competitividade das empresas, especialmente em setores com grande volume de transações, como o setor elétrico. Segundo pesquisa da McKinsey & Company (2023), organizações orientadas por dados têm 23 vezes mais chances de conquistar clientes e 19 vezes mais probabilidade de serem lucrativas. Nesse cenário, bancos de dados bem estruturados se tornam ferramentas indispensáveis para armazenar, organizar e analisar informações de forma eficaz.
