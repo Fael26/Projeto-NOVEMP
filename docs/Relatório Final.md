@@ -23,11 +23,11 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+## Resumo 
+
+O trabalho teve como objetivo desenvolver um banco de dados relacional para a empresa de elétrica fictícia Novemp, com foco na área de vendas. A iniciativa partiu de uma interação direta com a empresa, para coletar dados e compreender o funcionamento do setor.
 
 ---
-
 
 ## Introdução
 
