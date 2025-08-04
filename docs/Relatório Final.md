@@ -25,86 +25,28 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ## Resumo 
 
-O trabalho teve como objetivo desenvolver um banco de dados relacional para a empresa de elétrica fictícia Novemp, com foco na área de vendas. A iniciativa partiu de uma interação direta com a empresa, para coletar dados e compreender o funcionamento do setor.
+O projeto consistiu na criação de um banco de dados relacional para a empresa fictícia Novemp, com foco no setor de vendas. A estrutura foi pensada para armazenar e organizar dados de clientes, representantes, produtos, pedidos e pagamentos, garantindo integridade referencial e flexibilidade para análise. Foram elaborados modelos conceitual, lógico e físico, utilizando o MySQL como SGBD. Além disso, implementamos consultas SQL para responder a perguntas estratégicas do negócio, como identificação dos produtos mais vendidos, desempenho dos representantes e análise de compras por estado. O sistema final entrega uma base sólida e útil para apoiar a tomada de decisões comerciais baseadas em dados.
 
 ---
 
 ## Introdução
 
-A introdução deve apresentar de dois a quatro parágrafos de contextualização do trabalho. 
+Neste projeto, desenvolvemos um banco de dados relacional para a empresa fictícia de elétrica Novemp, com foco no setor de vendas. A iniciativa teve como objetivo organizar e estruturar os dados comerciais da empresa, permitindo uma gestão mais eficiente e analítica. A partir de dados simulados, construímos modelos conceitual, lógico e físico, respeitando princípios de integridade e normalização. Também implementamos consultas SQL para gerar insights sobre clientes, produtos e representantes. O resultado é uma solução robusta, capaz de apoiar decisões estratégicas com base em dados reais.
 
 ###    Contextualização
 
-Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere. 
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas).
+Atualmente, a gestão de dados é um dos principais pilares para a eficiência e competitividade das empresas, especialmente em setores com grande volume de transações, como o setor elétrico. Segundo pesquisa da McKinsey & Company (2023), organizações orientadas por dados têm 23 vezes mais chances de conquistar clientes e 19 vezes mais probabilidade de serem lucrativas. Nesse cenário, bancos de dados bem estruturados se tornam ferramentas indispensáveis para armazenar, organizar e analisar informações de forma eficaz.
 
-###    Problema
+O presente trabalho insere-se na área de banco de dados e ciência de dados aplicada à gestão empresarial, com foco em processos comerciais. A proposta foi desenvolver um sistema de banco de dados relacional para a empresa fictícia de elétrica Novemp, com base em dados simulados e estruturados. O projeto teve como objetivo não apenas organizar o fluxo de informações, mas também permitir análises estratégicas que apoiem a tomada de decisões no setor de vendas da empresa.
 
-Nesse momento você deve apresentar o problema que seu agente pretende resolver. 
-No entanto, não é a hora de comentar sobre a aplicação.
-Descreva também o contexto em que essa aplicação será usada, se  houver: 
-empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, 
-pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
-O **problema** pode ser algo vivido em uma empresa específica. Neste caso, o aluno deve 
-sucintamente apresentar o cenário de problema da empresa. A empresa só deve ser citada 
-explicitamente se o aluno tiver autorização para tal.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+---
 
 ###    Objetivo geral
 
-Nesta seção deve-se escrever um pequeno parágrafo ou frase com o **objetivo geral** 
-do trabalho. O objetivo deve ser bem direto, específico e definido com verbos de 
-ação (elaborar, propor, avaliar, comparar etc.). No caso deste projeto, o objetivo é
-"desenvolver um sistema inteligente para ...". O seu objetivo geral deve ser uma
-pergunta orientada a dados. Ou seja, ela deve incluir de forma geral os dados em que
-os modelos irão se basear para atingir o objetivo.
+Desenvolver um banco de dados relacional para atender às necessidades do setor de vendas de uma grande empresa do ramo elétrico, a Novemp. O objetivo principal foi estruturar as informações comerciais da empresa de forma organizada, segura e acessível, permitindo maior controle sobre pedidos, clientes, representantes e produtos. Através do projeto, buscou-se otimizar os processos internos da empresa e viabilizar análises estratégicas, contribuindo para uma gestão mais eficiente e orientada por dados.
 
-####    Objetivos específicos
-
-Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
-você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar 
-no seu trabalho.
-
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
-
-###    Justificativas
-
-Mostre também as **justificativas** para o  desenvolvimento do seu trabalho e, caso deseje, 
-destaque alguma contribuição do trabalho.
-
-A justific ativa deve descrever a importância ou a motivação para o desenvolvimento do 
-sistema inteligente escolhido. Indique as razões pelas quais você escolheu seus objetivos 
-específicos ou as razões para aprofundar em certos aspectos do software.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
-
-
-##    Público alvo
-
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. 
-O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários 
-na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos 
-usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, 
-diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
-
+---
 
 ## Análise exploratórida dos dados
 
