@@ -129,7 +129,7 @@ Além do modelo de dados, uma etapa essencial no projeto lógico é definir qual
 
 ---
 
-## 8. Conclusão
+## Conclusão
 
 A construção do banco de dados da empresa fictícia Novemp representou uma experiência completa de modelagem, implementação e análise de dados aplicados ao contexto empresarial. A partir de informações simuladas, conseguimos representar com fidelidade os processos do setor de vendas, contemplando desde o cadastro de clientes até a emissão de pedidos e controle de pagamentos. O projeto reforçou a importância de um modelo bem estruturado, com integridade referencial e normalização adequada, garantindo confiabilidade e consistência nas operações. A escolha pelo MySQL como SGBD se mostrou acertada, atendendo às necessidades técnicas com eficiência. Além disso, a elaboração de consultas SQL complexas permitiu extrair insights relevantes, como padrões de compra, desempenho de representantes e preferências por produto e região. As análises oferecidas podem servir de base para decisões mais estratégicas e direcionadas. O contato com a empresa também foi essencial para validar o sistema frente às demandas reais do mercado. Por fim, este trabalho evidencia o potencial dos bancos de dados como ferramentas não só operacionais, mas também analíticas e decisórias.
 
