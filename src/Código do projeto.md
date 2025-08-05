@@ -1,4 +1,4 @@
-# Código do projeto
+# Script do banco de dados:
 
 Create database Novemp;
 Use Novemp;
@@ -154,7 +154,9 @@ ALTER TABLE EndereçoEntrega MODIFY bairro char(40) AFTER numero;
 ALTER TABLE EndereçoEntrega MODIFY estado char(30) AFTER cidade;
 ALTER TABLE EndereçoEntrega MODIFY complemento char(30) AFTER numero;
 
-Script das instâncias do banco: 
+---
+
+# Script das instâncias do banco: 
 
 insert into representantes values ('ttt1234567','Marco Paulo');
 insert into representantes values ('ttu2400812','Lucas Rafael');
